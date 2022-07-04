@@ -1,0 +1,21 @@
+name: glados-checkin
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [mian]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: 0 10,16 * * *
+
+jobs:
+  checkin:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: run checkin
+        run: |
+          chmod +x ./auto-checkin.sh
+          ./auto-checkin.sh

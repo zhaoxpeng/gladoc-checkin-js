@@ -1,0 +1,16 @@
+{
+  "name": "gladoc-checkin-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "checkin": "node ./index.js"
+  },
+  "author": "Xipeng Zhao",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "node-schedule": "^2.1.0",
+    "request": "^2.88.2"
+  }
+}
